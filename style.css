@@ -1,0 +1,165 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+ /* background: #eef2f7;
+  background: linear-gradient(135deg, #f9fafc, #eef2f7);*/
+  padding-top: 70px;
+  background: url('images/stars.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Navbar */
+header {
+  /*background: #2b3a55;*/
+  /*background: rgba(6, 19, 42, 0.7); /* semi-transparent */
+  /*background: transparent;*/  
+  background: url('images/stars.jpg') no-repeat center center;
+  background-size: cover;  
+  color: #fff;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+  overflow: hidden;
+  backdrop-filter: blur(8px); /* frosted-glass effect */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Cards */
+.card {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+
+/* Headings */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #2b3a55;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.skills-grid span {
+  background: #e9eff6;
+  padding: 0.6rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Experience */
+.job {
+  margin-bottom: 2rem;
+}
+
+.job h3 {
+  color: #444;
+}
+
+.job .company {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #827c8e;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+#summary h2,
+#summary ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#summary ul {
+  list-style-position: inside;
+}
+
+#summary ul li {
+  padding-left: 0;
+}
+
+/* Align job section text and bullets */
+.job h3,
+.job .company,
+.job ul {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.job ul {
+  list-style-position: inside;
+}
+
+.job ul li {
+  padding-left: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 70px;
+  max-height: 70px;
+  object-fit: contain;
+  margin-top: 0;
+  margin-right: 10px;
+}
